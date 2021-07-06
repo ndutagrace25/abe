@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+html,
+body {
+  font-family: "Quicksand", sans-serif !important;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar {
+  background-color: #e0e0e0;
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header {
+  background-image: url("/src/images/pos-system-1140x644.png");
+  width: 100%;
+  height: 550px;
+  background-size: 100% auto;
+  color: #ffffff;
+  font-size: 80vw;
+  /* background-color: #17A2B8; */
+  object-fit: cover;
+  /* background-size: 100% 100%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: left top; */
+}
+
+nav {
+  background-color: #3e2723 !important;
+  color: #fff !important;
+}
+
+.underline {
+  color: #3e2723 !important;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: 133px;
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 4%;
+  background: #e4e4e4;
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* optional hover classes used with anmiation */
+
+.underline:hover:after {
+  width: 10%;
+  background: #f4b334;
+}
+
+.about-text {
+  text-align: justify;
+}
+.about {
+  width: 100% !important;
+}
+.f600 {
+  font-weight: 600 !important;
+  font-size: 0.8rem;
+}
+a {
+  text-decoration: none !important;
+}
+.footer {
+  background-color: #3e2723 !important;
+  color: #ffff !important;
+  margin-bottom: 0%;
+}
+.container {
+  min-height: 100vh !important;
+}
+@media only screen and (max-device-width: 540px) {
+  .header {
+    /* display: inline; */
+    height: 200px;
+    background-image: url("/src/images/pos-system-1140x644.png");
+    width: 100%;
+    background-size: 100% 100%;
+
+    font-weight: bold;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .mobile {
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  .underline:after {
+    bottom: 340px;
+    width: 8%;
+  }
+
+  .product {
+    width: 152px !important;
+    padding: 15px !important;
+    font-size: 0.67em !important;
+  }
+  .product-bottom {
+    font-size: 0.8em !important;
+  }
+  .product-desc {
+    flex-direction: column !important;
+    font-size: 0.67em !important;
   }
 }
+@media only screen and (max-device-width: 320px) {
+  .header {
+    /* display: inline; */
+    height: 200px;
+    background-image: url("/src/images/pos-system-1140x644.png");
+    width: 100%;
+    background-size: 100% 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    font-weight: bold;
+    justify-content: center !important;
+    align-items: center !important;
   }
-  to {
-    transform: rotate(360deg);
+  .mobile {
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  .product-desc {
+    flex-direction: column !important;
+    font-size: 0.67em !important;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .header {
+    /* display: inline; */
+    height: 200px;
+    background-image: url("/src/images/pos-system-1140x644.png");
+    width: 100%;
+    background-size: 100% auto;
+    object-fit: cover;
+    font-weight: bold;
+  }
+  .mobile {
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  .underline:after {
+    bottom: 720px;
+    width: 8%;
+  }
+  .product {
+    max-width: 200px !important;
+    padding: 22px !important;
+  }
+  .product-desc {
+    flex-direction: column !important;
+    font-size: 0.75em !important;
+    width: 100%;
   }
 }
