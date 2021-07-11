@@ -8,9 +8,9 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="container-fluid text-white">
-          <a className="navbar-brand text-white" href="#">
+          <Link className="navbar-brand text-white" to="/">
             ABE
-          </a>
+          </Link>
           <button
             className="navbar-toggler bg-light"
             type="button"
@@ -39,9 +39,9 @@ class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <Link className="nav-link text-white" to="/contactus">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <input

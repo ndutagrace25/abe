@@ -73,7 +73,10 @@ class Layout extends Component {
       <React.Fragment>
         <Navbar onChange={this.onChange} name="text" value={text} />
         <Header />
-        <Content title="Our Products" content={displayProduct} />
+        <Content
+          title="Our Products"
+          content={displayProduct}
+        />
         <Footer />
       </React.Fragment>
     );

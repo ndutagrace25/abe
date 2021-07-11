@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Footer } from "../common";
+import { RequestProduct } from ".";
 
 class ProductDetails extends Component {
   state = {};
@@ -35,9 +36,14 @@ class ProductDetails extends Component {
               </strong>
               {displayDescription}
               <div className="mt-3 d-flex justify-content-center align-items-center">
-                <button className="btn btn-sm btn-success">
+                <button
+                  className="btn btn-sm btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   Request This Product
                 </button>
+                <RequestProduct name={name}/>
               </div>
             </div>
           </div>

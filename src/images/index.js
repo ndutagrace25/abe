@@ -8,6 +8,9 @@ import TSC from "./TSC244 PRO.jpg";
 import wd_619 from "./WD-619 1D wired laser barcode scanner.jpg";
 import cashDrawer_420 from "./WD-420 cash drawer.jpg";
 import cash_410 from "./WD-410C Metal cash drawer.jpg";
+import call from "./call-removebg-preview.png";
+import mail from "./mail.jpg";
+import office from './office.jpg'
 
 export {
   wd,
@@ -20,4 +23,7 @@ export {
   wd_619,
   cashDrawer_420,
   cash_410,
+  call,
+  mail,
+  office
 };

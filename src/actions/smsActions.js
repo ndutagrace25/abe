@@ -1,14 +1,18 @@
 import axios from "axios";
+import Swal from "sweetalert2";
+import { CREATE_SMS } from "./types";
 
-export const sendMessage = () => (dispatch) => {
+export const sendMessage = (data) => (dispatch) => {
   let url = `https://menubackend.herokuapp.com/sms`;
-  let data = {
-    message: "Hello",
-  };
+
   axios
     .post(url, data)
     .then((response) => {
-      console.log(response);
+      dispatch({
+        type: CREATE_SMS,
+        payload: response.data,
+      });
+      Swal.fire("Success", "You will be contacted in a few..", "success");
     })
     .catch((err) => console.log(err));
 };
