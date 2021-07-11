@@ -11,6 +11,8 @@ import cash_410 from "./WD-410C Metal cash drawer.jpg";
 import call from "./call-removebg-preview.png";
 import mail from "./mail.jpg";
 import office from './office.jpg'
+import godex from './godex_g500.png'
+import bluetoothPrinter from './WD-58GM 58mm mini bluetooth portable printer.jpg'
 
 export {
   wd,
@@ -25,5 +27,7 @@ export {
   cash_410,
   call,
   mail,
-  office
+  office,
+  godex,
+  bluetoothPrinter,
 };

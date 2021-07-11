@@ -9,6 +9,8 @@ import {
   wd_619,
   cashDrawer_420,
   cash_410,
+  godex,
+  bluetoothPrinter,
 } from "../../images";
 
 export const data = [
@@ -356,5 +358,100 @@ export const data = [
     ],
     image: cash_410,
     name: "WD-410C Metal cash drawer",
+  },
+  {
+    id: 11,
+    description: [
+      {
+        title: "Print Method",
+        detail: "Thermal Transfer / Direct Thermal",
+      },
+      {
+        title: "Resolution",
+        detail: "203 dpi (8 dots/mm)",
+      },
+      {
+        title: "Print Speed",
+        detail: "5IPS (127 mm/s)",
+      },
+      {
+        title: "Print Width",
+        detail: "4.25 (108 mm)",
+      },
+      {
+        title: "Processor",
+        detail: "32 Bit RISC CPU",
+      },
+      {
+        title: "Memory",
+        detail: "8MB Flash (4MB for user storage) / 16MB SDRAM",
+      },
+      {
+        title: "Sensor Type",
+        detail:
+          "Adjustable reflective sensor. Fixed transmissive sensor, central aligned",
+      },
+      {
+        title: "Media",
+        detail:
+          "Types: Continuous form, gap labels, black mark sensing, and punched hole; label length set by auto sensing or programming Width: 1' (25.4 mm) Min. - 4.64' (118 mm) Max. Thickness: 0.0024” (0.06 mm) Min. - 0.01” (0.25 mm) Max. Label roll diameter: Max. 5” (127 mm) Core diameter: 1', 1.5', 3' (25.4 mm, 38.1 mm, 76.2 mm)",
+      },
+      {
+        title: "Graphics",
+        detail:
+          "Resident graphic file types are BMP and PCX, other graphic formats are downloadable from the software",
+      },
+      {
+        title: "Interfaces",
+        detail:
+          "USB, USB + Parallel Port (Optional), USB + Serial Port + Ethernet (Optional)",
+      },
+      {
+        title: "Power",
+        detail: "Auto Switching 100-240VAC, 50-60Hz",
+      },
+      {
+        title: "Dimension",
+        detail:
+          "Length: 11.2” (285 mm), Height: 6.8” (171 mm), Width: 8.9” (226 mm)",
+      },
+    ],
+    image: godex,
+    name: "Godex G500",
+  },
+  {
+    id: 12,
+    description: [
+      {
+        title: "Model",
+        detail: "WD-58GM",
+      },
+      {
+        title: "Compatibility",
+        detail: "Android and IOS operating sytems",
+      },
+      {
+        title: "Print speed",
+        detail: "70mm/sec",
+      },
+      {
+        title: "Reliability TPH Life",
+        detail: "100km",
+      },
+      {
+        title: "Resolution",
+        detail: "203DPI (8dot/mm)",
+      },
+      {
+        title: "Paper Type",
+        detail: "Thermal Paper",
+      },
+      {
+        title: "Battery",
+        detail: "Lithium: 7.4VDC/1500mA",
+      },
+    ],
+    image: bluetoothPrinter,
+    name: "WD-58GM 58mm mini bluetooth portable printer",
   },
 ];
